@@ -5,11 +5,13 @@ on:
     branches:
       - main
 
+# 전역 변수 설정
+env:
+    IMAGE_TAG: ${{ secrets.DOCKER_USERNAME }}/cicd-basic:${{ github.sha }}
+
 jobs:
   build-and-push-docker:
     runs-on: ubuntu-latest
-    env:
-      IMAGE_TAG: ${{ secrets.DOCKER_USERNAME }}/cicd-basic:${{ github.sha }}
     steps:
       - uses: actions/checkout@v2
 
@@ -30,7 +32,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       EKS_PATH: helm-projects/ktcloud-0326
-      IMAGE_TAG: ${{ secrets.DOCKER_USERNAME }}/cicd-practice:${{ github.sha }}
     steps:
       - uses: actions/checkout@v2
         with:
