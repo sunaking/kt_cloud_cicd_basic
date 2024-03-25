@@ -8,6 +8,8 @@
 - blog : [모두의 근삼이](https://ykarma1996.tistory.com/)
 - 회사 : 당근마켓
 - 부서 : SRE
+- LinkedIn : [링크드인](https://www.linkedin.com/in/geunsam2/)
+- Resume : [레주메](https://geunsam2.github.io/)
 
 ## 🥕 좋아하는 것
 
